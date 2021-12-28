@@ -19,12 +19,10 @@ For more info on how to import a custom Linux distribution for WSL, [check out t
     - Docker
       - `docker`
         - [Install instructions](https://docs.docker.com/engine/install/#server)
-        - ⚠️ **Warning:** I have not tested `docker` yet. This has been tested with `podman` and `buildah`.
-    - Podman/Buildah
+        - ⚠️ **Warning:** I have not tested `docker` yet. This has only been tested with `podman`.
+    - Podman
       - `podman`
         - [Install instructions](https://podman.io/getting-started/installation#linux-distributions)
-      - `buildah`
-        - [Install instructions](https://github.com/containers/buildah/blob/main/install.md)
 
 ## 🔨 Build the image
 
