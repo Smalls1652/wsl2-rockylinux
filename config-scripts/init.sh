@@ -6,9 +6,16 @@ yum update -y
 
 # Install packages that will be useful in WSL.
 echo -e "- Installing packages -"
+yum install -y man-db
 yum install -y sudo passwd dnf vim wget util-linux readline net-tools openssh openssl zip unzip
 
 # Cleanup unused packages to make the image smaller.
 echo -e "- Cleaning up -"
 yum autoremove -y
 yum clean all
+
+# Configure 'wsl.conf'
+echo -e "- Configuring 'wsl.conf' file - "
+echo "[automount]
+enabled=true
+root=/mnt" > /etc/wsl.conf
