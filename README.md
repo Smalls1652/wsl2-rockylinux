@@ -58,3 +58,7 @@ In the `list` array under the `profiles` object, add this to the list:
     "source": "Windows.Terminal.Wsl"
 }
 ```
+
+### 🤔 Things to do after importing
+
+- I would set up a user account for the image. [Check out this section in the WSL documentation](https://docs.microsoft.com/en-us/windows/wsl/use-custom-distro#add-wsl-specific-components-like-a-default-user) for details on how to configure it.
