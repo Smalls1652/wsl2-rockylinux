@@ -28,6 +28,8 @@ For more info on how to import a custom Linux distribution for WSL, [check out t
 
 ## 🔨 Build the image
 
+![Image building script example](.github/images/build-example.gif "RockyLinux building script in action")
+
 ⚠️ **Note:** If you're intending to run this on an existing WSL instance, I would suggest cloning the repo to Windows and running the script from that location inside of the WSL instance. It will remove the step of copying the output file. For example, it would be located somewhere in `/mnt/c/` in the WSL instance (Relative to where you cloned the repo to). 
 
 On your Linux host:
