@@ -1,6 +1,6 @@
 # RockyLinux WSL Image Creator
 
-This is a simple Windows Subsystem for Linux (WSL) image creator for RockyLinux.
+This is a simple Windows Subsystem for Linux (WSL) image creator for RockyLinux. Ever since CentOS was changed from being a downstream replica of Red Hat Enterprise Linux (RHEL) to being an upstream source for RHEL, I've been wanting to get a CentOS replacement instance set up to play around with. RockyLinux is one of the CentOS replacements that I've chosen to use for personal projects. Using WSL2 is a perfect solution for running a lightweight Linux VM for testing things, but there isn't an official RockyLinux distribution available in the Microsoft Store. This script will build the barebones RockyLinux image file to use with WSL.
 
 For more info on how to import a custom Linux distribution for WSL, [check out this document from Microsoft](https://docs.microsoft.com/en-us/windows/wsl/use-custom-distro).
 
