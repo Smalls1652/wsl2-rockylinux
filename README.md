@@ -48,7 +48,7 @@ On your Windows host:
     - The third argument is the path where the `.tar` file is located.
 3. You can now launch a terminal to the distribution by running `wsl.exe --distribution "RockyLinux"`.
 
-### Windows Terminal profile
+### 💻 Windows Terminal profile
 
 After importing the distribution, you can add this to your Windows Terminal settings JSON file to make it easier to access (If it doesn't add it automatically).
 
