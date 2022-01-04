@@ -15,20 +15,20 @@ For more info on how to import a custom Linux distribution for WSL, [check out t
 - **A Linux-based Operating System**
   - This can be from a physical system, a virtual machine, or another WSL instance on your computer.
 - **Packages installed on the system:**
-  - A container platform
+  - A container platform.
     - Docker
       - `docker`
         - [Install instructions](https://docs.docker.com/engine/install/#server)
-        - ⚠️ **Warning:** I have not tested `docker` yet. This has only been tested with `podman`.
     - Podman
       - `podman`
         - [Install instructions](https://podman.io/getting-started/installation#linux-distributions)
+    - ⚠️ **Note:** This has been tested with both `docker` and `podman`; however, **I personally use `podman`**, so there may be some unintentional breakage with `docker`.
 
 ## 🔨 Build the image
 
 ![Image building script example](.github/images/build-example.gif "RockyLinux building script in action")
 
-⚠️ **Note:** If you're intending to run this on an existing WSL instance, I would suggest cloning the repo to Windows and running the script from that location inside of the WSL instance. It will remove the step of copying the output file. For example, it would be located somewhere in `/mnt/c/` in the WSL instance (Relative to where you cloned the repo to). 
+⚠️ **Note:** If you're intending to run this on an existing WSL instance, I would suggest cloning the repo to Windows and running the script from that location inside of the WSL instance. It will remove the step of copying the output file. For example, it would be located somewhere in `/mnt/c/` in the WSL instance (Relative to where you cloned the repo to).
 
 On your Linux host:
 
