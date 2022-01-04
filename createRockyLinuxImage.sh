@@ -60,7 +60,7 @@ docker build --tag wsl2-rockylinux "${scriptDir}"
 echo -e "--------------------------------------\n"
 
 # Start a container from the built image and get it's ID.
-docker run -t --name=wsl2-rockylinux localhost/wsl2-rockylinux:latest bash ls /
+docker run -t --name=wsl2-rockylinux wsl2-rockylinux:latest bash ls /
 
 containerId=$(docker container ls -a | grep -i wsl2-rockylinux | awk '{print $1}')
 
@@ -72,7 +72,7 @@ docker export $containerId > $outFilePath
 echo -e "- Cleaning up..."
 docker container stop $containerId > /dev/null
 docker container rm $containerId > /dev/null
-builtImages=$(docker images | grep -Po '^localhost\/wsl2-rockylinux\s+(.+?)\s+\K([a-z0-9]{12})' | sort --unique)
+builtImages=$(docker images | grep -Po '^wsl2-rockylinux\s+(.+?)\s+\K([a-z0-9]{12})' | sort --unique)
 for item in $( echo "${builtImages[@]}" )
 do
     echo -e "\t- Removing Image ID: ${item}"
