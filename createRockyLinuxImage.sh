@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Check to see if docker or podman is installed.
 # If podman is installed, then set an alias for podman to docker.
@@ -12,7 +12,7 @@ then
         exit
     else
         echo -e "Setting an alias for podman to resolve to docker.\n"
-        alias docker=podman
+        alias docker=$(command -v podman)
         dockerAliasWasSet=1
     fi
 fi
