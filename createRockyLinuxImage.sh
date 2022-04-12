@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Check to see if docker or podman is installed.
 # If podman is installed, then set an alias for podman to docker.
